@@ -1,18 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div>
+      <NavBar />
+        <h1>{{ $t('search') }}</h1>
+        <h1>{{ $t('greeting') }}</h1>
+        <h1>{{ $t('greeting') }}</h1>
+        <h1>{{ $t('greeting') }}</h1>
+        <h1>{{ $t('greeting') }}</h1>
+                
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/NavBar.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    NavBar
   }
-}
+};
 </script>
+
 
 <style>
 #app {
