@@ -34,6 +34,17 @@
               <h1>{{ $t('greeting') }}</h1>
               <h1>{{ $t('greeting') }}</h1>
               <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('search') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('search') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              <h1>{{ $t('greeting') }}</h1>
+              
                 <!-- 给应用提供合适的间距 -->
                 <v-container >
 
