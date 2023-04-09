@@ -1,26 +1,21 @@
 <!-- <script src="https://kit.fontawesome.com/68eab83108.js" crossorigin="anonymous"></script> -->
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <!-- <div>
-      <NavBar />
-        <h1>{{ $t('search') }}</h1>
-        <h1>{{ $t('greeting') }}</h1>
-        <h1>{{ $t('greeting') }}</h1>
-        <h1>{{ $t('greeting') }}</h1>
-        <h1>{{ $t('greeting') }}</h1>
-                
-  </div> -->
-  <Login />
+  
+    <v-app>
+      <NavBar1 />
+    </v-app>
+  
 </template>
 
 <script>
 import Home from "./view/Home.vue";
 import Login from "./view/Login.vue";
+import NavBar1 from "./components/NavBar1.vue";
 export default {
   components: {
     Home,
-    Login
+    Login,
+    NavBar1
   }
 };
 </script>

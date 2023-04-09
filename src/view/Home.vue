@@ -1,31 +1,8 @@
 <template>
     
     <v-app>
-
-        <v-navigation-drawer color="black">
-          <img src="../assets/logo.png">
-          <!-- < v-on:click="redirect_to_login" /> -->
-        </v-navigation-drawer>
-
-        <v-app-bar color="black">
-          
-          <v-responsive max-width="400">
-            <!-- <v-text-field
-              :label="$t('search')"
-              solo
-              dense
-              flat
-              hide-details
-              rounded
-              append-outer-icon="search"
-            >
-          </v-text-field> -->
-          <SearchBar/>
-            
-    </v-responsive>
-    <v-spacer></v-spacer>
-            <ChangeLang />
-        </v-app-bar>
+        
+    
 
         <!-- 改這個地方!!!!!! -->
         <v-main>

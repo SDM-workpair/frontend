@@ -1,10 +1,4 @@
 <template>
-<v-app>
-<v-app-bar color="black">
-        <v-spacer></v-spacer>
-        <ChangeLang />
-</v-app-bar>
-
 <body bgcolor="black">
     <br>
     <br>
@@ -41,7 +35,7 @@
 
         <!-- </div> -->
 </body>
-</v-app>
+
 </template>
 <script>
 import ChangeLang from "../components/ChangeLang.vue";
