@@ -5,6 +5,10 @@ import en from './locales/en.js';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
 import router from "./router";
+import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import "bootstrap"
+import 'bootstrap-icons/font/bootstrap-icons'
 
 
 const i18n = createI18n({

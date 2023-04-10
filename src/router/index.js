@@ -3,6 +3,8 @@ import { createWebHistory, createRouter } from "vue-router";
 // import VueRouter from "vue-router";
 import Home from "@/view/Home.vue";
 import Login from "@/view/Login.vue";
+import Notification from "@/view/Notification.vue";
+import Profile from "@/view/Profile.vue";
 // import ShoppingCart from "@/views/ShoppingCart.vue";
 // import Deposit from "@/views/Deposit.vue";
 // import OrderRecord from "@/views/OrderRecord.vue";
@@ -21,15 +23,26 @@ import Login from "@/view/Login.vue";
 
 const routes = [
   {
-    path: "",
+    path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/notification",
+    name: "Notification",
+    component: Notification
   },
   {
     path: "/login",
     name: "Login",
     component: Login
   },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: Profile
+  },
+  
 //   {
 //     path: "*",
 //     name: "NotFound",

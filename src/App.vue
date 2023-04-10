@@ -1,8 +1,10 @@
 <!-- <script src="https://kit.fontawesome.com/68eab83108.js" crossorigin="anonymous"></script> -->
 <template>
-  
+
     <v-app>
-      <NavBar1 />
+      <!-- v hide if -->
+      <Login v-if="$route.path.includes('login')" />
+      <NavBar1 v-else/> 
     </v-app>
   
 </template>
@@ -11,11 +13,13 @@
 import Home from "./view/Home.vue";
 import Login from "./view/Login.vue";
 import NavBar1 from "./components/NavBar1.vue";
+
 export default {
   components: {
     Home,
     Login,
-    NavBar1
+    NavBar1,
+   
   }
 };
 </script>
