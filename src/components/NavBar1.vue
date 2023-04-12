@@ -2,7 +2,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css"/>
 
-  <v-app-bar app color="black">
+  <v-app-bar color="black">
       <v-container class="py-0 fill-height">
         <!-- <v-app-bar-title class="title-color"> -->
           <a href="/" style="text-decoration:none;">
@@ -12,7 +12,7 @@
         
         
         
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
               <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -50,24 +50,25 @@
     </v-app-bar>
     
     <v-navigation-drawer color="black">
-      <v-list>
-        <button href="#" class="btn btn-primary">{{ $t('add_new_space') }}</button>
+      <v-list class="hehe">
+        <button href="#" class="btn btn-primary hehe">{{ $t('add_new_space') }}</button>
       </v-list>
       <v-list>
-        <a href="#" class="text-decoration-none text-white"><i class="bi bi-people-fill"></i>  {{ $t('all_matching_space') }}</a>
+        <a href="/" class="text-decoration-none text-white hehe"><i class="bi bi-people-fill hihi"></i>  {{ $t('all_matching_space') }}</a>
       </v-list>
       <v-list>
-        <a href="#" class="text-decoration-none text-white"><i class="bi bi-person-fill"></i>  {{ $t('my_matching_space') }}</a>
+        <a href="/myMatchRoom" class="text-decoration-none text-white hehe"><i class="bi bi-person-fill hihi"></i>  {{ $t('my_matching_space') }}</a>
       </v-list>
       <v-list>
-        <a href="#" class="text-decoration-none text-white"><i class="bi bi-chat-fill"></i>  {{ $t('my_group') }}</a>
+        <a href="/myGroup" class="text-decoration-none text-white hehe"><i class="bi bi-chat-fill hihi"></i>  {{ $t('my_group') }}</a>
       </v-list>
       <v-list>
         <hr class="h-color mx-2">
       </v-list>
-      <v-list>
-        <h6>{{ $t('language') }}: </h6><ChangeLang />
+      <v-list class="hehe">
+        <div>{{ $t('language') }}:  </div><h6></h6><ChangeLang />
       </v-list>
+      
     </v-navigation-drawer>
 
     <router-view />
@@ -92,12 +93,22 @@ components: {
     margin-right: 20px;
     font-size: 1.7rem;
   }
+
+  .hihi {
+    margin-right: 5px;
+  }
+
+  .hihihi {
+    margin-right: 50px;
+  }
 </style>
 
-<!-- <style>
-#hehe {
-  width: 10px;
-  height: 10px;
+<style>
+.hehe {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -116,4 +127,4 @@ components: {
 }
 
 
-</style> -->
+</style>

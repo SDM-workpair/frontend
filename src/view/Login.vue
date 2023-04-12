@@ -10,7 +10,8 @@
 
     <v-main style="background-color: black;">
       
-        <div style="text-align:center;">
+      <!-- <div style="margin-top: 80px;"> HAHAHA</div> -->
+        <div style="text-align:center; margin-top: 90px;">
         <font size="6" color="white" face="Arial Black">Teamatch</font>
                   <h2 style="color:white">{{ $t('loginMessage') }}<font size="6" color="white" face="Arial Black">Teamatch</font></h2>
         </div>
@@ -33,8 +34,6 @@
                           style="text-align: center;">
                   </div>
                   
-                  
-       
               </div>
               
   
@@ -88,5 +87,9 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+  }
+
+  .hihiLogin{
+    margin-top: 100px;
   }
   </style>

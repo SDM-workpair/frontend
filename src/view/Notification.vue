@@ -2,15 +2,16 @@
     
     <v-app>
       <!-- 這一行要加 不然會有不置中的問題 -->
-      <v-navigation-drawer app></v-navigation-drawer>
+      <v-navigation-drawer></v-navigation-drawer>
       <!--                              -->
       
         <!-- 改這個地方!!!!!! -->
         <v-main>
-          <div class="ellipse-text">
-            NOTIFICATION
-          </div>
-          <!-- <hr class="h-color mx-3"> -->
+          <h2 class="text-left hahaMR">&nbsp&nbsp&nbsp&nbsp{{$t('notification')}}</h2>
+          <!-- <div class="ellipse-text">
+            {{ $t('notification') }}
+          </div> -->
+          <hr class="h-color mx-3">
           <div class="d-flex justify-content-center ellipse-text"
                 v-for="item in matching_rooms">
                 
@@ -85,11 +86,14 @@
 }
 
 .ellipse-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  padding: 16px;}
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size: 35px;
+text-align: center;
+font-weight: bold;
+color: #2c3e50;
+margin-top: 20px;}
 
   
 .oval-container {
@@ -111,14 +115,14 @@
   color: black;
   text-align: center;
   padding: 16px;
-  width: 1000px; 
+  width: 900px; 
   /* height: 50px; */
   /* text-align: center; */
   background-color: lightgray;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  height: 30px;
+  height: 35px;
 }
   
 </style>

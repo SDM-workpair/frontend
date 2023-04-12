@@ -11,7 +11,15 @@ const messages = {
     allMatchingRoom:'All Matching Rooms',
     dueDate: 'Due Time',
     joinRoom: 'Join',
-    minMemberNum: 'Minimum Group Size'
+    minMemberNum: 'Minimum Group Size',
+    notification: 'My Notification',
+    myProfile: 'My Profile',
+    name: 'Name',
+    email: 'E-mail',
+    confirm: 'Confirm',
+    my_id: 'My ID',
+    edit: 'Edit',
+    cancel: 'Cancel'
 
 
   

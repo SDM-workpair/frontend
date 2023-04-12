@@ -5,6 +5,9 @@ import Home from "@/view/Home.vue";
 import Login from "@/view/Login.vue";
 import Notification from "@/view/Notification.vue";
 import Profile from "@/view/Profile.vue";
+import MyMatchRoom from "@/view/MyMatchRoom.vue";
+import MyGroup from "@/view/MyGroup.vue";
+
 // import ShoppingCart from "@/views/ShoppingCart.vue";
 // import Deposit from "@/views/Deposit.vue";
 // import OrderRecord from "@/views/OrderRecord.vue";
@@ -41,6 +44,16 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: Profile
+  },
+  {
+    path: "/myMatchRoom",
+    name: "MyMatchRoom",
+    component: MyMatchRoom
+  },
+  {
+    path: "/myGroup",
+    name: "MyGroup",
+    component: MyGroup
   },
   
 //   {

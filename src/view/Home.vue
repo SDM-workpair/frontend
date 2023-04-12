@@ -2,13 +2,14 @@
     
   <v-app>
       <!-- 這一行要加 不然會有不置中的問題 -->
-      <v-navigation-drawer app></v-navigation-drawer>
+      <v-navigation-drawer></v-navigation-drawer>
       <!--                              -->
   
 
       <!-- 改這個地方!!!!!! -->
       <v-main>
-        <h2 class="text-left">&nbsp&nbsp&nbsp&nbsp{{$t('allMatchingRoom')}}</h2>
+        
+        <h2 class="text-left hahaMR">&nbsp&nbsp&nbsp&nbsp{{$t('allMatchingRoom')}}</h2>
         <hr class="h-color mx-2">
         <v-container fluid>
           
@@ -135,12 +136,13 @@ mounted:function(){
 
 
 <style>
-#app {
+.hahaMR {
 font-family: Avenir, Helvetica, Arial, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 text-align: center;
 color: #2c3e50;
-margin-top: 60px;
+margin-top: 80px;
 }
+
 </style>

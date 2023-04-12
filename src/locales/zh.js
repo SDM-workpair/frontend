@@ -11,7 +11,15 @@ const messages = {
     allMatchingRoom:'所有配對空間',
     dueDate: '截止時間',
     joinRoom: '加入配對空間',
-    minMemberNum: '最低小組人數'
+    minMemberNum: '最低小組人數',
+    notification: '我的訊息',
+    myProfile: '我的個人資料',
+    name: '名字',
+    email: '信箱',
+    confirm: '確認',
+    my_id: '我的ID',
+    edit: '編輯',
+    cancel: '取消'
     
   }
   
