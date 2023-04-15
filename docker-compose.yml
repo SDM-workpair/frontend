@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+ frontend:
+    container_name: "vue-frontend"
+    build: 
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ".:/frontend"
+    restart: always
+    environment:
+      - HOST=0.0.0.0
+      - WATCHPACK_POLLING=true
+    tty: true
+    command: "npm run serve"

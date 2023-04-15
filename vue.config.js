@@ -3,15 +3,17 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave:false,
 
-  //我不知道我再衝三小
-  // devServer: {
-  //   proxy: {
-  //     '/api': {
-  //       target: 'http://localhost:8000',
-  //       changeOrigin: true
-  //     }
-  //   }
-  // },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://backend.sdm-workpair.com/api/',
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true,
+        ws: true
+      }
+    }
+  },
+
 
   pluginOptions: {
     vuetify: {
