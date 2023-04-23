@@ -51,7 +51,7 @@
     
     <v-navigation-drawer color="black">
       <v-list class="hehe">
-        <button href="#" class="btn btn-primary hehe">{{ $t('add_new_space') }}</button>
+        <b-button @click="showPopup = true" class="btn btn-primary hehe">{{ $t('add_new_space') }}</b-button>
       </v-list>
       <v-list>
         <a href="/" class="text-decoration-none text-white hehe"><i class="bi bi-people-fill hihi"></i>  {{ $t('all_matching_space') }}</a>
@@ -68,8 +68,14 @@
       <v-list class="hehe">
         <div>{{ $t('language') }}:  </div><h6></h6><ChangeLang />
       </v-list>
-      
+      <v-list>
+        <!-- <DatePicker1 /> -->
+      </v-list>
     </v-navigation-drawer>
+<!-- <v-main> -->
+  <AddNewMatch v-if="showPopup" :show="showPopup" @close="showPopup = false">
+      
+    </AddNewMatch>
 
     <router-view />
 
@@ -78,11 +84,41 @@
 <script>
 import ChangeLang from "./ChangeLang.vue";
 import SearchBar from "./SearchBar.vue";
+import AddNewMatch from './AddNewMatch.vue';
+// import DatePicker1 from './DatePicker1.vue';
+// import { ref } from 'vue';
+
 export default {
 components: {
   ChangeLang,
-  SearchBar
-}
+  SearchBar,
+  AddNewMatch,
+  // DatePicker1
+},
+
+data() {
+  return {
+      showPopup: false,
+    };
+  }
+
+// setup() {
+//     const showPopup = ref(false);
+
+//     const openPopup = () => {
+//       showPopup.value = true;
+//     };
+
+//     const closePopup = () => {
+//       showPopup.value = false;
+//     };
+
+//     return {
+//       showPopup,
+//       openPopup,
+//       closePopup
+//     };
+//   }
 };
 </script>
 
@@ -125,6 +161,7 @@ components: {
 .leftTextColor {
   color: white ;
 }
+
 
 
 </style>

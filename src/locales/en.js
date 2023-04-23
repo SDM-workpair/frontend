@@ -19,7 +19,16 @@ const messages = {
     confirm: 'Confirm',
     my_id: 'My ID',
     edit: 'Edit',
-    cancel: 'Cancel'
+    cancel: 'Cancel',
+    add: 'New A Room',
+    roomDescription: 'Room Description',
+    roomQuantity: 'Room Quantity',
+    dueDate: 'Due Date',
+    roomName: 'Room Name',
+    inputRoomName: 'Named a New Room',
+    inputDate: 'Date For Matching',
+    matchingRoomProfile: "Matching Room Profile"
+
 
 
   
