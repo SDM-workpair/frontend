@@ -8,7 +8,7 @@ const messages = {
     my_matching_space:'我的配對空間',
     my_group:'我的小組',
     language:'語言',
-    allMatchingRoom:'所有配對空間哈',
+    allMatchingRoom:'所有配對空間',
     dueDate: '截止時間',
     joinRoom: '加入配對空間',
     minMemberNum: '最低小組人數',
