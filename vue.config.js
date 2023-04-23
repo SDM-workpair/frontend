@@ -29,7 +29,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://backend.sdm-workpair.com/api/',
+        target: 'https://backend.sdm-workpair.com/api/',
         pathRewrite: { '^/api': '' },
         changeOrigin: true,
         ws: false
