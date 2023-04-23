@@ -32,7 +32,7 @@ module.exports = defineConfig({
         target: 'https://backend.sdm-workpair.com/api/',
         pathRewrite: { '^/api': '' },
         changeOrigin: true,
-        wss: true
+        ws: false
       }
     },
     allowedHosts: [
