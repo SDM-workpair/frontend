@@ -7,6 +7,7 @@ import Notification from "@/view/Notification.vue";
 import Profile from "@/view/Profile.vue";
 import MyMatchRoom from "@/view/MyMatchRoom.vue";
 import MyGroup from "@/view/MyGroup.vue";
+import RoomProfile from "@/view/RoomProfile.vue";
 
 // import ShoppingCart from "@/views/ShoppingCart.vue";
 // import Deposit from "@/views/Deposit.vue";
@@ -54,6 +55,11 @@ const routes = [
     path: "/myGroup",
     name: "MyGroup",
     component: MyGroup
+  },
+  {
+    path: "/roomProfile",
+    name: "RoomProfile",
+    component: RoomProfile
   },
   
 //   {

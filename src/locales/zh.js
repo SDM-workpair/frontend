@@ -19,7 +19,15 @@ const messages = {
     confirm: '確認',
     my_id: '我的ID',
     edit: '編輯',
-    cancel: '取消'
+    cancel: '取消',
+    add: '新增配對活動',
+    roomDescription: '配對活動介紹',
+    roomQuantity: '群組人數',
+    dueDate: '配對截止日期',
+    roomName: '配對活動名稱',
+    inputRoomName: '輸入配對活動名稱',
+    inputDate: '選擇配對時間',
+    matchingRoomProfile: '配對空間個人資料',
     
   }
   
