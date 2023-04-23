@@ -109,7 +109,7 @@ SearchBar
 },
 methods: {
 refresh_mr(){
-  axios.post('http://localhost:8000/api/v1/search/matching-room/list',{
+  axios.post('/api/v1/search/matching-room/list',{
     user_email: "",
     prompt: "",
     query_all: true

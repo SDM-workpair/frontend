@@ -5,10 +5,13 @@ import en from './locales/en.js';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
 import router from "./router";
-import "bootstrap/dist/css/bootstrap.min.css"
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import "bootstrap"
-import 'bootstrap-icons/font/bootstrap-icons'
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap";
+import 'bootstrap-icons/font/bootstrap-icons';
+import '@vuepic/vue-datepicker/dist/main.css';
+import VueDatePicker from '@vuepic/vue-datepicker';
+
 
 
 const i18n = createI18n({

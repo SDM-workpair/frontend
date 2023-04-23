@@ -1,17 +1,47 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/,
+  //       loader: ['style-loader', 'css-loader'], // Note that the order is very important
+  //     },
+  //   ]
+  // },
+
+  configureWebpack: {
+    // It will be merged into the final Webpack config
+    resolve: {
+      extensions: ['', '.js', '.jsx', '.css'],
+      // alias: {
+      //   xyz$: path.resolve(__dirname, 'path/to/file.js'),
+      // },
+    }
+    
+ 
+  },
+
+
+
   transpileDependencies: true,
   lintOnSave:false,
 
-  //我不知道我再衝三小
-  // devServer: {
-  //   proxy: {
-  //     '/api': {
-  //       target: 'http://localhost:8000',
-  //       changeOrigin: true
-  //     }
-  //   }
-  // },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'https://backend.sdm-workpair.com/api/',
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true,
+        wss: true
+      }
+    },
+    allowedHosts: [
+      'localhost',
+      'app.sdm-workpair.com',
+      '34.96.75.13',
+    ]
+
+  },
 
   pluginOptions: {
     vuetify: {
