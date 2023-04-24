@@ -76,9 +76,34 @@ data() {
 methods: {
   async fetchUserProfile() {
     try {
+
+      //const response = await fetch('http://localhost:8000/api/v1/users/profile/me', {
+        //credentials: 'include'
+      //});
+
+      
+      const token = sessionStorage.getItem('token');
+      console.log("33333");
+      console.log(token); // 输出 "John"
+
+      //const response = await fetch('http://localhost:8000/api/v1/users/profile/me', {
+        //headers: {
+        //  'Authorization': 'Bearer ' + token
+        //},
+       // credentials: 'include'
+      //});
+
+
       const response = await fetch('http://localhost:8000/api/v1/users/profile/me', {
-        credentials: 'include'
+        headers: {
+          'Authorization': 'Bearer ' + token,
+          'Content-Type': 'application/json'
+        },
+        method: 'GET'
       });
+
+      console.log("44444");
+
       const data = await response.json();
       // 取得姓名和email並更新HTML
       document.getElementById('name').textContent = data.data.name;
@@ -102,10 +127,16 @@ methods: {
         console.log("1");
         console.log("wdit");
         console.log(document.getElementById('id').value);
+
+        const token = sessionStorage.getItem('token');
+        console.log("33333");
+        console.log(token); // 输出 "John"
+
         const response = await fetch('http://localhost:8000/api/v1/users/profile', {
         method: 'PUT',
         credentials: 'include',
         headers: {
+          'Authorization': 'Bearer ' + token,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({

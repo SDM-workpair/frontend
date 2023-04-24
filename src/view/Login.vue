@@ -6,6 +6,7 @@
           <v-spacer></v-spacer>
           {{ $t('language') }} : <ChangeLang />
     </v-app-bar>
+    
 
 
     <v-main style="background-color: black;">
@@ -18,7 +19,7 @@
         
               <div class="center">
                   <div id="g_id_onload"
-                          data-client_id="1053350950008-u5aj1t8vr0if3hlf80etdaaf7g8odadg.apps.googleusercontent.com"
+                          data-client_id="768305533256-eg3ift96spolgtm69bo6r3423df13c73.apps.googleusercontent.com"
                           data-callback="handleCallback"
                           data-auto_prompt="false" style="text-align: center;">
                           
@@ -35,6 +36,9 @@
                   </div>
                   
               </div>
+              <div>
+              hihiihii
+              </div>
               
   
             </v-main>
@@ -42,18 +46,18 @@
   
   </template>
   <script>
+  console.log("hihihi");
   import ChangeLang from "../components/ChangeLang.vue";
   export default {
     components: {
       ChangeLang
     },
   };
-  
+  console.log("hihihi");
   window.handleCallback = (response) => {
     console.log("here");
     console.log(response);
     console.log(response.credential);
-  
   
     fetch("http://localhost:8000/api/v1/auth/sso-login", {
     method: 'POST',
@@ -68,10 +72,16 @@
       //params.append('data', JSON.stringify(data));
       //window.location.href = 'http://localhost:8080/?' + params.toString();
   
-      sessionStorage.setItem('data', JSON.stringify(data));
-      window.location.href = 'http://localhost:8080/';
-      
+      //sessionStorage.setItem('data', JSON.stringify(data));
+      //window.location.href = 'http://localhost:8080/';
+      console.log("here222");
       console.log(data); // The response data
+      console.log(data.data.access_token); 
+      sessionStorage.setItem('token', data.data.access_token);
+      const token = sessionStorage.getItem('token');
+      console.log("33333");
+      console.log(token); // 输出 "John"
+      window.location.href = 'http://localhost:8080/';
     })
     .catch(error => {
       console.error('Error:', error);
